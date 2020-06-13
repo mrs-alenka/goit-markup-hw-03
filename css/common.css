@@ -1,0 +1,99 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --font-logo: "Raleway", sans-sarif;
+  --font-text: "Roboto", sans-sarif;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: var(--font-text);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Стилизация logo */
+.logo {
+  font-family: var(--font-logo);
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-blue {
+  color: var(--accent-color);
+}
+.logo-black {
+  color: #000000;
+}
+/* Site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Cтилизация контактов в хедере */
+.header-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+/* Стилизация Footer */
+footer {
+  background-color: #2f303a;
+}
+.logo-white {
+  color: var(--primary-white-color);
+}
+.address {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+.address .contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.socials .title,
+.mailing .title {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.socials .link {
+  color: var(--primary-white-color);
+}
+.socials .link:hover,
+.socials .link:focus {
+  color: var(--accent-color);
+}
+.contacts-company {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
