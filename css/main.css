@@ -6,36 +6,56 @@
 /* контакты: rgba(255, 255, 255, 0.4) */
 /* вторичный цвет фона: #F5F4FA */
 
-.list {
-  list-style: none;
+/* Hero */
+.hero {
+  text-align: center;
 }
 
-/* Hero */
-
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-white-color);
-  /* временно */
-  background-color: gray;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  /* временно */
+  outline: 2px solid tomato;
+  background-color: gray;
 }
 .button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-family: var(--font-text);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
 /* Section */
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.invisible {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -46,23 +66,31 @@
 /* Features */
 
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* Examples */
 
 .work-list .title {
   color: var(--primary-white-color);
-  /* временно */
-  background-color: gray;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+
+  /* временно */
+  background-color: gray;
 }
 
 /* Our team */
@@ -71,15 +99,21 @@
   background-color: #f5f4fa;
 }
 .our-team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .our-team .vacancy {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .our-team .link {
   color: var(--primary-text-color);
@@ -90,8 +124,15 @@
 }
 
 /* Portfolio */
-
+.invisible {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .portfolio .button-secondary {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-family: var(--font-text);
   color: var(--title-text-color);
   background-color: #f5f4fa;
   font-weight: 500;
@@ -99,17 +140,22 @@
   line-height: 1.62;
   text-align: center;
 }
+.filter {
+  padding-bottom: 50px;
+}
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: var(--accent-color);
 }
 .projects .job {
+  margin: 0;
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
 .projects .text {
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -118,6 +164,8 @@
   text-decoration: none;
 }
 .projects .name {
+  text-align: left;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

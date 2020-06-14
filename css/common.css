@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -15,7 +24,21 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+/* Утилиты */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+/* Стиль хедер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 /* Стилизация logo */
 .logo {
   font-family: var(--font-logo);
@@ -29,9 +52,30 @@ body {
 .logo-black {
   color: #000000;
 }
+
 /* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+.site-nav .item + .item {
+  margin-left: 40px;
+}
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -61,6 +105,13 @@ body {
 .header-contacts .link:focus {
   color: var(--accent-color);
 }
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts .link + .link {
+  margin-left: 30px;
+}
 /* Стилизация Footer */
 footer {
   background-color: #2f303a;
@@ -69,20 +120,36 @@ footer {
   color: var(--primary-white-color);
 }
 .address {
+  margin-bottom: 28px;
   color: var(--primary-white-color);
   font-style: normal;
 }
+.address p {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
 .address .contacts {
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 .socials .title,
 .mailing .title {
+  margin-top: 0;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.socials {
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+.mailing {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .socials .link {
   color: var(--primary-white-color);
@@ -92,6 +159,9 @@ footer {
   color: var(--accent-color);
 }
 .contacts-company {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 21px;
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
