@@ -64,6 +64,19 @@
 }
 
 /* Features */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-list .item {
+  width: 270px;
+}
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.list-item:not(:last-child) {
+  margin-bottom: 12px;
+}
 
 .feature-list .title {
   margin-top: 0;
@@ -128,6 +141,9 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* Кнопки */
+
 .portfolio .button-secondary {
   border: 1px solid transparent;
   border-radius: 4px;
@@ -147,6 +163,33 @@
 .portfolio .link:focus {
   color: var(--accent-color);
 }
+
+/* Примеры работ */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.my-work {
+  width: 370px;
+  /* width: calc((100%-60px) / 3); не получаю тот же результат*/
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.my-work:nth-child(3n) {
+  margin-right: 0;
+}
+.my-work:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* Альтернативный вариант */
+/* .my-work:not(:nth-child(3n)){
+  margin-right:30px;
+}
+   */
+/* .my-work:not(:nth-last-child(-n+3)){
+     margin-bottom:30px;
+   } */
 .projects .job {
   margin: 0;
   color: var(--primary-text-color);

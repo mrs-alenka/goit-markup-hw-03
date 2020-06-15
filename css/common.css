@@ -53,23 +53,25 @@ body {
   color: #000000;
 }
 
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Site nav */
 .site-nav {
   display: flex;
   margin-left: 85px;
 }
 
-/* Main-nav */
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-/* .site-nav .item:not(:last-child) {
-  margin-right: 50px;
-} */
 .site-nav .item + .item {
   margin-left: 40px;
 }
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
 
 .site-nav .link {
   display: block;
