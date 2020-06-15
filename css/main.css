@@ -197,7 +197,13 @@
 .portfolio .link:focus {
   color: var(--accent-color);
 }
-
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .radio-button:not(:last-child) {
+  margin-right: 8px;
+}
 /* Примеры работ */
 .projects {
   display: flex;
@@ -205,9 +211,9 @@
 }
 .my-work {
   width: 370px;
-  /* width: calc((100%-60px) / 3); не получаю тот же результат*/
   margin-right: 30px;
   margin-bottom: 30px;
+  /* width: calc((100%-60px) / 3); не получаю тот же результат*/
 }
 .my-work:nth-child(3n) {
   margin-right: 0;
@@ -216,7 +222,19 @@
   margin-bottom: 0;
 }
 
-/* Альтернативный вариант */
+/* Альтернативный вариант 1*/
+
+/* .projects{
+  display: flex;
+  flex-wrap: wrap;
+  margin:-15px;
+} */
+/* .my-work {
+  width: 370px;
+  margin:15px;
+} */
+
+/* Альтернативный вариант 2*/
 /* .my-work:not(:nth-child(3n)){
   margin-right:30px;
 }

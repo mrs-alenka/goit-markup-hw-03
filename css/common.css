@@ -114,6 +114,7 @@ body {
 .header-contacts .link + .link {
   margin-left: 30px;
 }
+
 /* Стилизация Footer */
 footer {
   background-color: #2f303a;
@@ -126,6 +127,7 @@ footer {
   color: var(--primary-white-color);
   font-style: normal;
 }
+
 .address p {
   margin-top: 0;
   margin-bottom: 9px;
