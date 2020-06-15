@@ -119,11 +119,19 @@ body {
 footer {
   background-color: #2f303a;
 }
+.footer-part {
+  display: flex;
+  justify-content: space-around;
+}
+.studio {
+  margin-top: 45px;
+}
+
 .logo-white {
   color: var(--primary-white-color);
 }
 .address {
-  margin-bottom: 28px;
+  margin-top: 8px;
   color: var(--primary-white-color);
   font-style: normal;
 }
@@ -148,12 +156,10 @@ footer {
   text-transform: uppercase;
 }
 .socials {
-  margin-top: 0;
-  margin-bottom: 56px;
+  margin-top: 57px;
 }
 .mailing {
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin-top: 57px;
 }
 .socials .link {
   color: var(--primary-white-color);

@@ -49,6 +49,7 @@
   padding-bottom: 0;
 }
 .invisible {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -191,7 +192,7 @@
   text-align: center;
 }
 .filter {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .portfolio .link:hover,
 .portfolio .link:focus {
@@ -210,10 +211,10 @@
   flex-wrap: wrap;
 }
 .my-work {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  /* width: calc((100%-60px) / 3); не получаю тот же результат*/
+  background-color: var(--primary-white-color);
 }
 .my-work:nth-child(3n) {
   margin-right: 0;
