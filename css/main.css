@@ -45,8 +45,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.no-padding {
-  padding-top: 0;
+.section.padding-top {
   padding-bottom: 0;
 }
 .invisible {
@@ -93,7 +92,16 @@
 }
 
 /* Examples */
-
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-list .example {
+  width: 370px;
+}
+.work-list .example:not(:last-child) {
+  margin-right: 30px;
+}
 .work-list .title {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -134,6 +142,18 @@
 .our-team .link:hover,
 .our-team .link:focus {
   color: var(--accent-color);
+}
+
+/* Постоянные клиенты */
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.customers .company {
+  width: 170px;
+}
+.customers .company:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Portfolio */
