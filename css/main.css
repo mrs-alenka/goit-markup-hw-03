@@ -119,6 +119,17 @@
 .our-team {
   background-color: #f5f4fa;
 }
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team .performing {
+  width: 270px;
+  background-color: var(--primary-white-color);
+}
+.team .performing:not(:last-child) {
+  margin-right: 30px;
+}
 .our-team .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -142,6 +153,9 @@
 .our-team .link:hover,
 .our-team .link:focus {
   color: var(--accent-color);
+}
+.social .icon {
+  text-align: center;
 }
 
 /* Постоянные клиенты */
