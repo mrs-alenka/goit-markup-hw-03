@@ -171,6 +171,11 @@ img {
   display: flex;
   align-items: center;
 }
+.social-icon {
+  width: 44px;
+  height: 44px;
+  background-color: skyblue;
+}
 .social-icon:not(:last-child) {
   margin-right: 10px;
 }

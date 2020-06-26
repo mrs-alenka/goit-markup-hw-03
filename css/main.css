@@ -140,6 +140,9 @@
 .team .performing:not(:last-child) {
   margin-right: 30px;
 }
+.photo {
+  margin-bottom: 30px;
+}
 .our-team .title {
   margin-top: 0;
   margin-bottom: 10px;
