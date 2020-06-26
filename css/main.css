@@ -9,6 +9,9 @@
 /* Hero */
 .hero {
   text-align: center;
+  min-height: 600px;
+  background-color: gray;
+  align-items: center;
 }
 
 .hero-title {
@@ -19,11 +22,11 @@
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  align-content: center;
   text-transform: uppercase;
 
   /* временно */
   outline: 2px solid tomato;
-  background-color: gray;
 }
 .button {
   border: 1px solid transparent;
@@ -100,16 +103,22 @@
 .work-list .example {
   width: 370px;
 }
+.skills {
+  margin-bottom: 30px;
+}
 .work-list .example:not(:last-child) {
   margin-right: 30px;
 }
 .work-list .title {
+  margin: 0;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   /* временно */
   background-color: gray;
@@ -155,10 +164,9 @@
 .our-team .link:focus {
   color: var(--accent-color);
 }
-.social .icon {
-  text-align: center;
+.team .social-list {
+  margin: 0 32px 24px 32px;
 }
-
 /* Постоянные клиенты */
 .customers {
   display: flex;
@@ -191,9 +199,6 @@
   line-height: 1.62;
   text-align: center;
 }
-.filter {
-  margin-bottom: 50px;
-}
 .portfolio .link:hover,
 .portfolio .link:focus {
   color: var(--accent-color);
@@ -201,6 +206,7 @@
 .portfolio {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio .radio-button:not(:last-child) {
   margin-right: 8px;
@@ -255,6 +261,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+
+  display: none;
 }
 .projects .link {
   text-decoration: none;
@@ -262,6 +270,7 @@
 .projects .name {
   text-align: left;
   margin-bottom: 4px;
+  padding-top: 20p;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

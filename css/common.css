@@ -30,7 +30,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+img {
+  display: block;
+}
 /* Стиль хедер */
 .container {
   width: 1200px;
@@ -116,24 +118,28 @@ body {
 }
 
 /* Стилизация Footer */
-footer {
+.page-footer {
   background-color: #2f303a;
 }
 .footer-part {
   display: flex;
-  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 45px;
+  min-height: 193px;
 }
-.studio {
-  margin-top: 45px;
+.studio > .logo {
+  margin-bottom: 8px;
+  display: block;
 }
-
 .logo-white {
   color: var(--primary-white-color);
 }
 .address {
-  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
   color: var(--primary-white-color);
   font-style: normal;
+  margin-right: 69px;
 }
 
 .address p {
@@ -145,6 +151,12 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+/* Соц сети */
+.socials {
+  display: block;
+  margin-right: 94px;
+}
 .socials .title,
 .mailing .title {
   margin-top: 0;
@@ -155,11 +167,12 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.socials {
-  margin-top: 57px;
+.social-list {
+  display: flex;
+  align-items: center;
 }
-.mailing {
-  margin-top: 57px;
+.social-icon:not(:last-child) {
+  margin-right: 10px;
 }
 .socials .link {
   color: var(--primary-white-color);
@@ -168,12 +181,18 @@ footer {
 .socials .link:focus {
   color: var(--accent-color);
 }
-.contacts-company {
-  margin: 0;
+
+/* Рассылка */
+.mailing {
+}
+
+/* Авторсие права */
+.copyright {
   padding-top: 18px;
   padding-bottom: 21px;
+  text-align: center;
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 2;
-  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

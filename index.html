@@ -43,7 +43,7 @@
     </header>
     <main>
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <form>
           <button class="button">Заказать услугу</button>
@@ -57,6 +57,7 @@
           <ul class="feature-list list">
             <li class="item">
               <img
+                class="skills"
                 src="./images/antenna.jpg"
                 alt="антенна"
                 width="270"
@@ -70,6 +71,7 @@
             </li>
             <li class="item">
               <img
+                class="skills"
                 src="./images/clock.jpg"
                 alt="часы"
                 width="270"
@@ -83,6 +85,7 @@
             </li>
             <li class="item">
               <img
+                class="skills"
                 src="./images/diagram.jpg"
                 alt="диаграмма"
                 width="270"
@@ -96,6 +99,7 @@
             </li>
             <li class="item">
               <img
+                class="skills"
                 src="./images/astronaut.jpg"
                 alt="астронавт"
                 width="270"
@@ -161,23 +165,23 @@
               />
               <h3 class="title">Николай Кучеренко</h3>
               <p class="vacancy">Product Designer</p>
-              <ul class="social list">
-                <li class="icon">
+              <ul class="social-list list">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Instargram" class="link"
                     >Instargram</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Twitter" class="link"
                     >Twitter</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Facebook" class="link"
                     >Facebook</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Linkedin" class="link"
                     >Linkedin</a
                   >
@@ -193,23 +197,23 @@
               />
               <h3 class="title">Ольга Иванова</h3>
               <p class="vacancy">Frontend Developer</p>
-              <ul class="social list">
-                <li class="icon">
+              <ul class="social-list list">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Instargram" class="link"
                     >Instargram</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Twitter" class="link"
                     >Twitter</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Facebook" class="link"
                     >Facebook</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Linkedin" class="link"
                     >Linkedin</a
                   >
@@ -225,23 +229,23 @@
               />
               <h3 class="title">Андрей Шевченко</h3>
               <p class="vacancy">Marketing</p>
-              <ul class="social list">
-                <li class="icon">
+              <ul class="social-list list">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Instargram" class="link"
                     >Instargram</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Twitter" class="link"
                     >Twitter</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Facebook" class="link"
                     >Facebook</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Linkedin" class="link"
                     >Linkedin</a
                   >
@@ -257,23 +261,23 @@
               />
               <h3 class="title">Иван Николаев</h3>
               <p class="vacancy">UI Designer</p>
-              <ul class="social list">
-                <li class="icon">
+              <ul class="social-list list">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Instargram" class="link"
                     >Instargram</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Twitter" class="link"
                     >Twitter</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Facebook" class="link"
                     >Facebook</a
                   >
                 </li>
-                <li class="icon">
+                <li class="social-icon">
                   <a href="" aria-label="Ссылка на Linkedin" class="link"
                     >Linkedin</a
                   >
@@ -350,64 +354,64 @@
     </main>
 
     <!-- Футер -->
-    <footer>
-      <div class="container">
-        <div class="footer-part">
-          <div class="studio">
-            <a href="./index.html" class="logo">
-              <span class="logo-blue">Web</span>
-              <span class="logo-white">Studio</span>
+    <footer class="page-footer">
+      <div class="container footer-part">
+        <div class="studio">
+          <a href="./index.html" class="logo">
+            <span class="logo-blue">Web</span>
+            <span class="logo-white">Studio</span>
+          </a>
+
+          <!-- Контакты -->
+          <address class="address">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="contacts">
+              info@devstudio.com
             </a>
-
-            <!-- Контакты -->
-            <address class="address">
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
-              <a href="mailto:info@devstudio.com" class="contacts">
-                info@devstudio.com </a
-              ><br />
-              <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
-            </address>
-          </div>
-
-          <!-- Соц сети -->
-          <section class="socials">
-            <h2 class="invisible">Контакты inv</h2>
-            <p class="title"><b>ПРИСОЕДИНЯЙТЕСЬ</b></p>
-            <ul class="list">
-              <li>
-                <a href="" aria-label="Ссылка на Instargram" class="link">
-                  Instargram
-                </a>
-              </li>
-              <li>
-                <a href="" aria-label="Ссылка на Twitter" class="link">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="" aria-label="Ссылка на Facebook" class="link">
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a href="" aria-label="Ссылка на Linkedin" class="link">
-                  Linkedin
-                </a>
-              </li>
-            </ul>
-          </section>
-
-          <!-- Рассылка -->
-          <section class="mailing">
-            <h2 class="invisible">Рассылка inv</h2>
-            <p class="title"><b>ПОДПИШИТЕСЬ НА РАССЫЛКУ</b></p>
-            <form>
-              <button class="button">Подписаться</button>
-            </form>
-          </section>
+            <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+          </address>
         </div>
-        <p class="contacts-company">2020 | Developed by GoIT Students</p>
+
+        <!-- Соц сети -->
+        <div class="socials">
+          <h2 class="invisible">Контакты inv</h2>
+          <p class="title"><b>ПРИСОЕДИНЯЙТЕСЬ</b></p>
+          <ul class="social-list list">
+            <li class="social-icon">
+              <a href="" aria-label="Ссылка на Instargram" class="link">
+                Instargram
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" aria-label="Ссылка на Twitter" class="link">
+                Twitter
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" aria-label="Ссылка на Facebook" class="link">
+                Facebook
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" aria-label="Ссылка на Linkedin" class="link">
+                Linkedin
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Рассылка -->
+        <div class="mailing">
+          <h2 class="invisible">Рассылка inv</h2>
+          <p class="title"><b>ПОДПИШИТЕСЬ НА РАССЫЛКУ</b></p>
+          <form>
+            <button class="button">Подписаться</button>
+          </form>
+        </div>
       </div>
+
+      <!-- Авторские права -->
+      <p class="container copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
